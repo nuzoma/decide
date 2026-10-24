@@ -1,0 +1,6 @@
+{
+  "name": "Meal Decider",
+  "description": "A calm, phone-first tool that matches meals to your energy level, avoids recent repeats, and tracks cooking vs ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

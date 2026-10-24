@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #f8f6f0;
+    --bg-surface: #ffffff;
+    --bg-surface-subtle: #f1ede4;
+    --text-main: #141312;
+    --text-muted: #6e6b65;
+    --text-faint: #9c978e;
+    --border-line: #e4dfd5;
+    --border-strong: #141312;
+    --btn-primary-bg: #141312;
+    --btn-primary-text: #f8f6f0;
+    --tag-min: #2f6f4f;
+    --tag-norm: #2a5584;
+    --tag-batch: #8f4d1e;
+  }
+
+  .dark {
+    --bg-canvas: #151413;
+    --bg-surface: #1e1d1b;
+    --bg-surface-subtle: #272522;
+    --text-main: #f5f3ec;
+    --text-muted: #a6a197;
+    --text-faint: #6e6a62;
+    --border-line: #2d2b27;
+    --border-strong: #f5f3ec;
+    --btn-primary-bg: #f5f3ec;
+    --btn-primary-text: #151413;
+    --tag-min: #4ade80;
+    --tag-norm: #60a5fa;
+    --tag-batch: #fb923c;
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    min-height: 100vh;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+}
+
+/* Tabular numbers for clean stats and date lists */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Custom scrollbar for clean minimalism */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(150, 140, 130, 0.25);
+  border-radius: 2px;
+}
